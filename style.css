@@ -24,3 +24,11 @@
 #right {
   grid-area: right;
 }
+
+h3 {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 0.5em;
+}
