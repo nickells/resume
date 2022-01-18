@@ -1,6 +1,6 @@
 
 #page {
-  --unit: 8vw;
+  --unit: 105px;
   max-width: calc(8.5 * var(--unit));
   height: calc(11 * var(--unit));
   border: 1px solid black;
@@ -24,7 +24,8 @@
     grid-template-areas:
     "top"
     "left"
-    "right";  
+    "right";
+    grid-template-columns: 1fr;
   }
   
 }
@@ -57,6 +58,7 @@ h1{
 
 h2 {
  font-size: 14pt; 
+  font-weight: bold;
 }
 
 h3 {
