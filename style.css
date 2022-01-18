@@ -1,7 +1,7 @@
 
 #page {
   --unit: 8vw;
-  width: calc(8.5 * var(--unit));
+  max-width: calc(8.5 * var(--unit));
   height: calc(11 * var(--unit));
   border: 1px solid black;
   padding: 1em;
@@ -15,6 +15,18 @@
   grid-template-columns: 5fr 2fr;
   font-family: Helvetica, sans-serif;
   font-size: 11pt;
+  grid-column-gap: 1em;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  #page {
+    grid-template-areas:
+    "top"
+    "left"
+    "right";  
+  }
+  
 }
 
 #top {
@@ -30,6 +42,7 @@
 h1, h2, h3, h4, p, ul, li {
   padding: 0em;
   margin: 0.5em 0;
+  font-weight: 400;
 }
 
 span {
@@ -39,6 +52,7 @@ span {
 h1{
   margin-top: 0em;
   font-size: 14pt;
+  font-weight: bold;
 }
 
 h2 {
