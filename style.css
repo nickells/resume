@@ -10,7 +10,7 @@ body {
   --font-size-lg: 12pt;
   
   max-width: calc(8.5 * var(--unit));
-  height: calc(11 * var(--unit));
+/*   height: calc(11 * var(--unit)); */
   border: 1px solid black;
   padding: 1em;
   box-sizing: border-box;
@@ -31,11 +31,11 @@ body {
 }
 
 @media only screen {
-  #page {
+/*   #page {
     transform: scale(1.5);
     transform-origin: top center;
     
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
