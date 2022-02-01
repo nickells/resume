@@ -1,20 +1,18 @@
 body {
   margin: 0;
-  
 }
-
 
 #page {
   --unit: 90px;
   --font-size-md: 9.5pt;
   --font-size-lg: 12pt;
-  
+
   max-width: calc(8.5 * var(--unit));
-/*   height: calc(11 * var(--unit)); */
+  /*   height: calc(11 * var(--unit)); */
   border: 1px solid black;
   padding: 1em;
   box-sizing: border-box;
-  
+
   display: grid;
   grid-template-areas:
     "top top"
@@ -25,43 +23,33 @@ body {
   font-size: var(--font-size-md);
   grid-column-gap: 1em;
   margin: 0 auto;
-  
+
   line-height: 1.4em;
   font-kerning: normal;
-/*   text-align: justify; */
-}
-
-@media only screen {
-/*   #page {
-    transform: scale(1.5);
-    transform-origin: top center;
-    
-  } */
+  /*   text-align: justify; */
 }
 
 @media screen and (max-width: 1024px) {
   #page {
     grid-template-areas:
-    "top"
-    "left"
-    "right";
+      "top"
+      "left"
+      "right";
     grid-template-columns: 1fr;
   }
-  
 }
 
 @media print {
-/*   --unit: 72px; */
+  /*   --unit: 72px; */
 
   #page {
     border: none;
-/*     width: 100%; */
+    /*     width: 100%; */
   }
-  
+
   @page {
     margin: 5cm;
   }
-  
 }
 
 #top {
@@ -74,7 +62,13 @@ body {
   grid-area: right;
 }
 
-h1, h2, h3, h4, p, ul, li {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
   padding: 0em;
   margin: 0.5em 0;
   font-weight: 400;
@@ -87,14 +81,14 @@ span:nth-of-type(2) {
   font-style: italic;
 }
 
-h1{
+h1 {
   margin-top: 0em;
   font-size: var(--font-size-lg);
   font-weight: bold;
 }
 
 h2 {
-  font-size: var(--font-size-lg);; 
+  font-size: var(--font-size-lg);
   font-weight: bold;
   margin-top: 1em;
 }
