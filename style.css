@@ -4,13 +4,13 @@ body {
 
 #page {
   --unit: 90px;
-  --font-size-md: 9.5pt;
+  --font-size-md: 9pt;
   --font-size-lg: 12pt;
 
   max-width: calc(8.5 * var(--unit));
   /*   height: calc(11 * var(--unit)); */
-  border: 1px solid black;
-  padding: 1em;
+  border: 1px solid #DDD;
+  padding: 1.5em;
   box-sizing: border-box;
 
   display: grid;
@@ -27,6 +27,8 @@ body {
   line-height: 1.4em;
   font-kerning: normal;
   /*   text-align: justify; */
+  
+  box-shadow: 0px 0px 40px rgb(0 0 0 / 10%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -43,7 +45,9 @@ body {
   /*   --unit: 72px; */
 
   #page {
+    padding: 1em;
     border: none;
+    box-shadow: none;
     /*     width: 100%; */
   }
 
